@@ -1,0 +1,31 @@
+<section class="hero">
+    <img src="/HomeBarra.jpg" alt="Muebles a medida" />
+    <div class="overlay">
+      <h1>Diseño y calidad para tu hogar</h1>
+      <p>Muebles 100% personalizados</p>
+    </div>
+  </section>
+  
+  <section class="intro">
+    <div class="container">
+      <h2>Bienvenidos a Los Cerezos</h2>
+      <p>
+        Somos fabricantes de muebles a medida con más de 30 años de experiencia.
+        Diseñamos espacios únicos, con calidad artesanal y materiales nobles.
+      </p>
+    </div>
+  </section>
+  
+  <section class="destacados">
+    <div class="container">
+      <h3>Productos destacados</h3>
+      <div class="grid">
+        <div class="card" *ngFor="let producto of productos">
+          <img [src]="producto.img" [alt]="producto.nombre" />
+          <h4>{{ producto.nombre }}</h4>
+          <a [routerLink]="producto.link">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  

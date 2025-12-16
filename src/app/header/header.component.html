@@ -1,0 +1,43 @@
+<header class="header">
+    <div class="header-container">
+      <!-- LOGO -->
+      <a routerLink="/home" class="logo">
+        <img src="/logo.jpg" alt="Los Cerezos" />
+      </a>
+  
+      <!-- NAVIGATION -->
+      <nav class="nav" [class.active]="isMenuOpen">
+        <a routerLink="/home" routerLinkActive="active" (click)="isMenuOpen = false">Inicio</a>
+        <a routerLink="/empresa" routerLinkActive="active" (click)="isMenuOpen = false">Empresa</a>
+  
+        <div class="dropdown">
+          <span>Productos ▾</span>
+          <div class="dropdown-menu">
+            <a routerLink="/productos/cocinas" (click)="isMenuOpen = false">Cocinas</a>
+            <a routerLink="/productos/placards" (click)="isMenuOpen = false">Placards</a>
+            <a routerLink="/productos/banio" (click)="isMenuOpen = false">Muebles de Baño</a>
+            <a routerLink="/productos/lavaderos" (click)="isMenuOpen = false">Muebles para Lavaderos</a>
+            <a routerLink="/productos/living" (click)="isMenuOpen = false">Muebles de Living / TV</a>
+            <a routerLink="/productos/dormitorios" (click)="isMenuOpen = false">Muebles para Dormitorios</a>
+            <a routerLink="/productos/infantiles" (click)="isMenuOpen = false">Dormitorios Infantiles</a>
+            <a routerLink="/productos/bibliotecas" (click)="isMenuOpen = false">Bibliotecas</a>
+            <a routerLink="/productos/escaleras" (click)="isMenuOpen = false">Escaleras y Bajoescaleras</a>
+            <a routerLink="/productos/oficinas" (click)="isMenuOpen = false">Muebles para Oficinas</a>
+            <a routerLink="/productos/locales" (click)="isMenuOpen = false">Locales Comerciales</a>
+            <a routerLink="/productos/puertas" (click)="isMenuOpen = false">Puertas</a>
+        </div>
+        </div>
+  
+        <a routerLink="/showroom" routerLinkActive="active" (click)="isMenuOpen = false">Showroom</a>
+        <a routerLink="/contacto" routerLinkActive="active" (click)="isMenuOpen = false">Contacto</a>
+      </nav>
+  
+      <!-- BURGER MENU (mobile) -->
+      <div class="burger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  
