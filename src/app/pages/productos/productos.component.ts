@@ -21,9 +21,7 @@ export class ProductosComponent implements OnInit {
 
   categoriaActual: string = 'todas';
 
-  // IMPORTANTE:
-  // Estas rutas funcionan si las imágenes están en /public (Angular las sirve desde raíz)
-  // Ej: public/PUERTA_GRANERO_MELAMINA.jpg => "/PUERTA_GRANERO_MELAMINA.jpg"
+
   productos: Producto[] = [
      { id: 1, categoria: 'cocinas', titulo: 'Cocina enchapada', descripcion: 'Cocina enchapada en incienso con acabado lustrado.', imagen: '/COCINA  ENCHAPADA EN INCIENZO LUSTRADA AGUADAS.jpg' },
   { id: 2, categoria: 'cocinas', titulo: 'Cocina negra', descripcion: 'Cocina en negro con mesada de Silestone.', imagen: '/COCINA COLOR NEGRO CON MESADA DE SILESTONE.jpg' },
@@ -55,10 +53,10 @@ export class ProductosComponent implements OnInit {
   { id: 20, categoria: 'living', titulo: 'Panel TV', descripcion: 'Panel TV en melamina blanca.', imagen: '/PANEL TV MELAMINA BLANCA.jpeg' },
 
   // ===== LAVADEROS (4) ===== no tengo fotos 
-  { id: 21, categoria: 'lavaderos', titulo: 'Lavadero blanco', descripcion: 'Lavadero funcional en melamina blanca.', imagen: '/MUEBLE_MELAMINA_BLANCA_PARA_MAQUETAS.jpg' },
-  { id: 22, categoria: 'lavaderos', titulo: 'Lavadero madera', descripcion: 'Lavadero con detalles en madera.', imagen: '/MUEBLE_MELAMINA_COMBINADA.jpeg' },
-  { id: 23, categoria: 'lavaderos', titulo: 'Lavadero moderno', descripcion: 'Diseño moderno y práctico.', imagen: '/MUEBLE_MELAMINA_OFICINAS_CACHERO.jpg' },
-  { id: 24, categoria: 'lavaderos', titulo: 'Lavadero compacto', descripcion: 'Optimizado para espacios chicos.', imagen: '/MUEBLE_MELAMINA_MAQUETAS.jpg' },
+  { id: 21, categoria: 'lavaderos', titulo: 'Lavadero blanco', descripcion: 'Lavadero funcional en melamina blanca.', imagen: '/LAVADERO 2.jpg' },
+  { id: 22, categoria: 'lavaderos', titulo: 'Lavadero madera', descripcion: 'Lavadero con detalles en madera.', imagen: '/LAVADERO 3.jpg' },
+  { id: 23, categoria: 'lavaderos', titulo: 'Lavadero moderno', descripcion: 'Diseño moderno y práctico.', imagen: '/LAVADERO 1.jpg' },
+  { id: 24, categoria: 'lavaderos', titulo: 'Lavadero compacto', descripcion: 'Optimizado para espacios chicos.', imagen: '/LAVADERO 5.jpg' },
 
   // ===== DORMITORIOS (4) =====
   { id: 25, categoria: 'dormitorios', titulo: 'Dormitorio madera', descripcion: 'Dormitorio en madera lustrada.', imagen: '/DORMITORIO COMPLETO MADERA LUSTRADA Y LAQUEADO.jpg' },

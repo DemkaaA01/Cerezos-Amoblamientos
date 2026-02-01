@@ -38,7 +38,7 @@ export class HomeComponent {
       subtitle: 'Funcionales, modernas y duraderas',
     },
     {
-      src: '/PlacardHome.jpg',
+      src: '/PLACARD CON ESCRITORIO.jpg',
       alt: 'Placards a medida',
       title: 'Placards que aprovechan cada espacio',
       subtitle: 'Diseño, orden y terminaciones premium',
@@ -50,9 +50,9 @@ export class HomeComponent {
   private readonly intervalMs = 7500;
 
     productosDestacados: ProductoDestacado[] = [
-    { img: '/COCINA ENCHAPADA EN INCIENZO LUSTRADA AGUADAS.jpg', nombre: 'Cocina enchapada', link: '/productos/cocinas' },
+    { img: '/COCINA MADERA 3.jpg', nombre: 'Cocinas', link: '/productos/cocinas' },
     { img: '/PlacardHome.jpg', nombre: 'Placards', link: '/productos/placards' },
-    { img: '/MUEBLE LIVING MELAMINA.jpg', nombre: 'Living / TV', link: '/productos/living' },
+    { img: '/MUEBLE LIVING MELAMINA COMBINADA.jpeg', nombre: 'Living / TV', link: '/productos/living' },
   ];
 
 ngOnInit(): void {
