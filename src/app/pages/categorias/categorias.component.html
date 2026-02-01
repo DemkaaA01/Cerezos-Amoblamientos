@@ -1,0 +1,26 @@
+<section class="categorias-page">
+  <div class="container">
+    <header class="hero">
+      <h1>Productos</h1>
+      <p>Elegí una categoría para ver ejemplos y terminaciones.</p>
+    </header>
+
+    <div class="grid">
+      <a
+        class="card"
+        *ngFor="let c of categorias"
+        [routerLink]="['/productos', c.slug]"
+      >
+        <div class="thumb">
+          <img [src]="c.imagen" [alt]="c.titulo" (error)="onImgError($event)" />
+        </div>
+
+        <div class="info">
+          <h3>{{ c.titulo }}</h3>
+          <p>{{ c.subtitulo }}</p>
+          <span class="cta">Ver {{ c.titulo }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

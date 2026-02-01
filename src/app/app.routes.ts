@@ -4,6 +4,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InformacionUtilComponent } from './pages/informacion_util/informacion-util.component';
 import { ShowroomComponent } from './pages/showroom/showroom.component';
 import { ProductosComponent } from './pages/productos/productos.component';
+import { CategoriasComponent } from './pages/categorias/categorias.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   // 🔹 Productos
   { path: 'productos', component: ProductosComponent },
   { path: 'productos/:categoria', component: ProductosComponent },
+  {path: 'categorias', component:CategoriasComponent},
 
   // 🔹 Fallback
   { path: '**', redirectTo: '' }
