@@ -26,11 +26,7 @@ errorEnvio = false;
       email: 'adrianchamorro@loscerezosamoblamientos.com.ar',
       telefono: '3415420382'
     },
-    {
-      nombre: 'Franco Chamorro',
-      email: 'francochamorro@loscerezosamoblamientos.com.ar',
-      telefono: '3413750548'
-    }
+
   ];
 
   instagram = {
