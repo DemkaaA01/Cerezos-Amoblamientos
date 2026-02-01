@@ -13,6 +13,7 @@
 // export class AppComponent {
 //   title = 'los-cerezos';
 // }
+import { WhatsappButtonComponent } from './components/whatsapp-button/whatsapp-button.component';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,7 +32,7 @@ import {
 @Component({
   selector: 'app-root',
    standalone: true,
-  imports: [RouterOutlet, HeaderComponent,FooterComponent],
+  imports: [RouterOutlet, HeaderComponent,FooterComponent, WhatsappButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
